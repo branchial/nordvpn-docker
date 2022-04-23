@@ -5,6 +5,7 @@ ARG NORDVPN_VERSION=3.12.4
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y && \
+    apt-get upgrade -ydd && \
     apt-get install -y curl iputils-ping libc6 wireguard && \
     curl https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb --output /tmp/nordrepo.deb && \
     apt-get install -y /tmp/nordrepo.deb && \

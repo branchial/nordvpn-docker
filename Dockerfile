@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-ubuntu:bionic
+FROM ghcr.io/linuxserver/baseimage-ubuntu:focal
 LABEL maintainer="Julio Gutierrez julio.guti+nordvpn@pm.me"
 
 ARG NORDVPN_VERSION=3.12.4

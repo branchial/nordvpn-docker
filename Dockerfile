@@ -1,7 +1,7 @@
 FROM ghcr.io/linuxserver/baseimage-ubuntu:focal
 LABEL maintainer="Julio Gutierrez julio.guti+nordvpn@pm.me"
 
-ARG NORDVPN_VERSION=3.12.4
+ARG NORDVPN_VERSION=3.12.5
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y && \
